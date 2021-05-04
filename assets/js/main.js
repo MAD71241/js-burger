@@ -1,9 +1,6 @@
 /* Il programma dovrà consentire di calcolare il prezzo del panino selezionando o deselezionando gli ingredienti proposti. */
 var burgerGen = document.getElementById("burger-assemble");
 
-//prezzo burger
-var baseBurger = 4.99;
-
 
 
 burgerGen.addEventListener("click", function () {
@@ -34,19 +31,21 @@ burgerGen.addEventListener("click", function () {
     var mustardCheck = document.getElementById("mustard").checked;
 
     var ingredients = [
-        [document.getElementById("ketchup").checked, ketchupCost],
-        [document.getElementById("cheese").checked, cheeseCost],
-        [document.getElementById("tomato").checked, tomatoCost],
-        [document.getElementById("egg").checked, eggCost],
-        [document.getElementById("lettuce").checked, lettuceCost],
-        [document.getElementById("mustard").checked, mustardCost]
+        [ketchupCheck, ketchupCost],
+        [cheeseCheck, cheeseCost],
+        [tomatoCheck, tomatoCost],
+        [eggCheck, eggCost],
+        [lettuceCheck, lettuceCost],
+        [mustardCheck, mustardCost]
     ];
 
-    var burgerFinalCost = baseBurger;
+    var burgerFinalCost = 4.99;
     for (i = 0; i < ingredients.length; i++) {
         if (ingredients[i][0] == true) {
-            Number(burgerFinalCost = baseBurger += ingredients[i][1]);
-        }
-        document.getElementById("pricetag").innerHTML = burgerFinalCost + " €";
+            burgerFinalCost += ingredients[i][1];
+        }  
     }
+    document.getElementById("pricetag").innerHTML = burgerFinalCost + " €";
+    console.log(burgerFinalCost);
+    
 })
