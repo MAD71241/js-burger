@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 dbg">
+        <div class="col-12 bg-white">
           <input
             type="text"
             name="burgername"
@@ -96,20 +96,20 @@
                 <h4>Ketchup</h4>
                 <input type="checkbox" data-price="0.5" value="ketchup" name="ketchup" id="ketchup" />
               </div>
-              <div class="col-12">
-                  <input type="text" name="coupon" id="coupon" placeholder="insert you coupon here">
+              <div class="col-12 mt-3">
+                  <label for="">Discount Coupon</label><input type="text" name="coupon" id="coupon" class="rounded bg-pinkish" placeholder="insert you coupon here">
                   
               </div>
               <div class="col-12 d-flex justify-content-center">
-                  <button id="burger-assemble">Burger Assemble</button>
+                  <button id="burger-assemble" class="bg-orange rounded text-black text-lowercase font-weight-bold">Calculate</button>
               </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 bg-purple text-white d-flex justify-content-between">
-          <h2>your price:</h2>
-          <h2 id="pricetag">actual pricetag</h2>
+        <div class="col-12 bg-purple text-white d-flex justify-content-between footer padding-15">
+          <h2 class="font-weight-bold">your price:</h2>
+          <h2 class="font-weight-bold" id="pricetag">actual pricetag</h2>
         </div>
       </div>
     </div>
