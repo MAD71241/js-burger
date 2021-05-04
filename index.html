@@ -19,7 +19,93 @@
     />
     <title>Boolean Burger</title>
   </head>
-  <body>
+  <body class="bg-pinkish">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 bg-orange">
+          <h1>Create your burger</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 dbg">
+          <input
+            type="text"
+            name="burgername"
+            id="burgername"
+            placeholder="type your Burger Name here!"
+          />
+          <div class="row">
+            <div class="col-12"><h2>Ingredients</h2></div>
+            <div class="col-6 d-flex align-items-center">
+              <img
+                src="./assets/img/cheese.svg"
+                class="ingredient-thumbnail"
+                alt="cheese logo"
+                id="cheese-img"
+              />
+              <h4>Cheese</h4>
+              <input type="checkbox" value="cheese" name="cheese" id="cheese" />
+            </div>
+            <div class="col-6 d-flex align-items-center">
+                <img
+                  src="./assets/img/tomato.svg"
+                  class="ingredient-thumbnail"
+                  alt="tomato logo"
+                  id="tomato-img"
+                />
+                <h4>Tomato</h4>
+                <input type="checkbox" value="egg" name="egg" id="egg" />
+              </div>
+              <div class="col-6 d-flex align-items-center">
+                <img
+                  src="./assets/img/egg.svg"
+                  class="ingredient-thumbnail"
+                  alt="egg logo"
+                  id="egg-img"
+                />
+                <h4>Egg</h4>
+                <input type="checkbox" value="lettuce" name="lettuce" id="lettuce" />
+              </div>
+              <div class="col-6 d-flex align-items-center">
+                <img
+                  src="./assets/img/lettuce.svg"
+                  class="ingredient-thumbnail"
+                  alt="lettuce logo"
+                  id="lettuce-img"
+                />
+                <h4>Lettuce</h4>
+                <input type="checkbox" value="mustard" name="mustard" id="mustard" />
+              </div>
+              <div class="col-6 d-flex align-items-center">
+                <img
+                  src="./assets/img/mustard.svg"
+                  class="ingredient-thumbnail"
+                  alt="mustard logo"
+                  id="mustard-img"
+                />
+                <h4>Mustard</h4>
+                <input type="checkbox" value="ketchup" name="ketchup" id="ketchup" />
+              </div>
+              <div class="col-6 d-flex align-items-center">
+                <img
+                  src="./assets/img/ketchup.svg"
+                  class="ingredient-thumbnail"
+                  alt="ketchup logo"
+                  id="ketchup-img"
+                />
+                <h4>Ketchup</h4>
+                <input type="checkbox" value="cheese" name="cheese" id="cheese" />
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 bg-purple text-white d-flex justify-content-between">
+          <h2>your price:</h2>
+          <h2>actual pricetag</h2>
+        </div>
+      </div>
+    </div>
 
     <script src="./assets/js/main.js"></script>
   </body>
