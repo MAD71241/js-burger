@@ -40,6 +40,10 @@ burgerGen.addEventListener("click", function () {
     ];
 
     var burgerFinalCost = 4.99;
+    if (document.getElementById("burgername").value === "") {
+        alert("Dai un nome al tuo hamburger!");
+        return;
+    }
     for (i = 0; i < ingredients.length; i++) {
         if (ingredients[i][0] == true) {
             burgerFinalCost += ingredients[i][1];
