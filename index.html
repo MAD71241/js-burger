@@ -20,12 +20,15 @@
     <title>Boolean Burger</title>
   </head>
   <body class="bg-pinkish">
+    <!-- container principale -->
     <div class="container">
+      <!-- header -->
       <div class="row">
         <div class="col-12 bg-orange">
           <h1>Create your burger</h1>
         </div>
       </div>
+      <!-- burger name -->
       <div class="row">
         <div class="col-12 bg-white">
           <input
@@ -34,8 +37,10 @@
             id="burgername"
             placeholder="type your Burger Name here!"
           />
+          <!-- sezione ingredienti -->
           <div class="row">
             <div class="col-12"><h2>Ingredients</h2></div>
+            <!-- card ingredienti -->
             <div class="col-6 d-flex align-items-center">
               <img
                 src="./assets/img/cheese.svg"
@@ -44,70 +49,121 @@
                 id="cheese-img"
               />
               <h4>Cheese</h4>
-              <input type="checkbox" data-price="1" value="cheese" name="cheese" id="cheese" />
+              <input
+                type="checkbox"
+                data-price="1"
+                value="cheese"
+                name="cheese"
+                id="cheese"
+              />
+            </div>
+            <!-- /card ingredienti -->
+            <div class="col-6 d-flex align-items-center">
+              <img
+                src="./assets/img/tomato.svg"
+                class="ingredient-thumbnail"
+                alt="tomato logo"
+                id="tomato-img"
+              />
+              <h4>Tomato</h4>
+              <input
+                type="checkbox"
+                data-price="1"
+                value="tomato"
+                name="tomato"
+                id="tomato"
+              />
             </div>
             <div class="col-6 d-flex align-items-center">
-                <img
-                  src="./assets/img/tomato.svg"
-                  class="ingredient-thumbnail"
-                  alt="tomato logo"
-                  id="tomato-img"
-                />
-                <h4>Tomato</h4>
-                <input type="checkbox" data-price="1" value="tomato" name="tomato" id="tomato" />
-              </div>
-              <div class="col-6 d-flex align-items-center">
-                <img
-                  src="./assets/img/egg.svg"
-                  class="ingredient-thumbnail"
-                  alt="egg logo"
-                  id="egg-img"
-                />
-                <h4>Egg</h4>
-                <input type="checkbox" data-price="1.25" value="egg" name="egg" id="egg" />
-              </div>
-              <div class="col-6 d-flex align-items-center">
-                <img
-                  src="./assets/img/lettuce.svg"
-                  class="ingredient-thumbnail"
-                  alt="lettuce logo"
-                  id="lettuce-img"
-                />
-                <h4>Lettuce</h4>
-                <input type="checkbox" data-price="0.75" value="lettuce" name="lettuce" id="lettuce" />
-              </div>
-              <div class="col-6 d-flex align-items-center">
-                <img
-                  src="./assets/img/mustard.svg"
-                  class="ingredient-thumbnail"
-                  alt="mustard logo"
-                  id="mustard-img"
-                />
-                <h4>Mustard</h4>
-                <input type="checkbox" data-price="0.5" value="mustard" name="mustard" id="mustard" />
-              </div>
-              <div class="col-6 d-flex align-items-center">
-                <img
-                  src="./assets/img/ketchup.svg"
-                  class="ingredient-thumbnail"
-                  alt="ketchup logo"
-                  id="ketchup-img"
-                />
-                <h4>Ketchup</h4>
-                <input type="checkbox" data-price="0.5" value="ketchup" name="ketchup" id="ketchup" />
-              </div>
-              <div class="col-12 mt-3">
-                  <label for="">Discount Coupon</label><input type="text" name="coupon" id="coupon" class="rounded bg-pinkish" placeholder="insert you coupon here">
-                  
-              </div>
-              <div class="col-12 d-flex justify-content-center">
-                  <button id="burger-assemble" class="bg-orange rounded text-black text-lowercase font-weight-bold">Calculate</button>
-              </div>
+              <img
+                src="./assets/img/egg.svg"
+                class="ingredient-thumbnail"
+                alt="egg logo"
+                id="egg-img"
+              />
+              <h4>Egg</h4>
+              <input
+                type="checkbox"
+                data-price="1.25"
+                value="egg"
+                name="egg"
+                id="egg"
+              />
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <img
+                src="./assets/img/lettuce.svg"
+                class="ingredient-thumbnail"
+                alt="lettuce logo"
+                id="lettuce-img"
+              />
+              <h4>Lettuce</h4>
+              <input
+                type="checkbox"
+                data-price="0.75"
+                value="lettuce"
+                name="lettuce"
+                id="lettuce"
+              />
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <img
+                src="./assets/img/mustard.svg"
+                class="ingredient-thumbnail"
+                alt="mustard logo"
+                id="mustard-img"
+              />
+              <h4>Mustard</h4>
+              <input
+                type="checkbox"
+                data-price="0.5"
+                value="mustard"
+                name="mustard"
+                id="mustard"
+              />
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <img
+                src="./assets/img/ketchup.svg"
+                class="ingredient-thumbnail"
+                alt="ketchup logo"
+                id="ketchup-img"
+              />
+              <h4>Ketchup</h4>
+              <input
+                type="checkbox"
+                data-price="0.5"
+                value="ketchup"
+                name="ketchup"
+                id="ketchup"
+              />
+            </div>
+            <div class="col-12 mt-3">
+              <label for="">Discount Coupon</label
+              ><input
+                type="text"
+                name="coupon"
+                id="coupon"
+                class="rounded bg-pinkish"
+                placeholder="insert you coupon here"
+              />
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <button
+                id="burger-assemble"
+                class="bg-orange rounded text-black text-lowercase font-weight-bold"
+              >
+                Calculate
+              </button>
+            </div>
           </div>
         </div>
       </div>
+      <!-- sezione prezzo -->
       <div class="row">
-        <div class="col-12 bg-purple text-white d-flex justify-content-between footer padding-15">
+        <div
+          class="col-12 bg-purple text-white d-flex justify-content-between footer padding-15"
+        >
           <h2 class="font-weight-bold">your price:</h2>
           <h2 class="font-weight-bold" id="pricetag">actual pricetag</h2>
         </div>
