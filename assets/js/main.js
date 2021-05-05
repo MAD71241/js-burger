@@ -5,6 +5,10 @@ var burgerGen = document.getElementById("burger-assemble");
 
 burgerGen.addEventListener("click", function () {
 
+    var couponCheck = document.getElementById("coupon").value;
+    var discountMoney = 1.99;
+    var discountAsd = 2.99;
+
     //prezzo e checkbox ketchup
     var ketchup = document.getElementById("ketchup").dataset;
     var ketchupCost = Number(ketchup.price);
@@ -40,14 +44,22 @@ burgerGen.addEventListener("click", function () {
     ];
 
     var burgerFinalCost = 4.99;
+    //controllo sull'inserimento nome Hamburger
     if (document.getElementById("burgername").value === "") {
         alert("Dai un nome al tuo hamburger!");
         return;
     }
+    //funzione di calcolo del costo Hamburger
     for (i = 0; i < ingredients.length; i++) {
         if (ingredients[i][0] == true) {
             burgerFinalCost += ingredients[i][1];
         }  
+    }
+    //funzione di calcolo del prezzo tramite coupon
+    if (couponCheck === "GimmeMoney") {
+        burgerFinalCost = burgerFinalCost - discountMoney;
+    } else if (couponCheck === "AsdMania") {
+        burgerFinalCost = burgerFinalCost - discountAsd;
     }
     document.getElementById("pricetag").innerHTML = burgerFinalCost + " €";
     console.log(burgerFinalCost);
